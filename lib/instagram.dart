@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 class Instagram_Once_Page extends StatefulWidget {
   const Instagram_Once_Page({super.key});
@@ -18,6 +19,27 @@ class _Instagram_Once_PageState extends State<Instagram_Once_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //  bottomNavigationBar
+       bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: Colors.white,
+        items: const[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home,color: Colors.black,),
+         ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search,color: Colors.black),
+         ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_box_outlined,color: Colors.black),
+         ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite_border_outlined,color: Colors.black),
+         ),
+         BottomNavigationBarItem(
+            icon: Icon(Icons.circle,color: Colors.black),
+         ),
+       ],),
+
       body: ListView(
         scrollDirection: Axis.vertical,
         children: [
